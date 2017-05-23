@@ -1,0 +1,29 @@
+Spark Command: /usr/lib/jvm/java-8-oracle/bin/java -cp /home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/conf/:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/spark-assembly-1.6.1-hadoop2.6.0.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-core-3.2.10.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-api-jdo-3.2.6.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-rdbms-3.2.9.jar -Xms1g -Xmx1g org.apache.spark.deploy.worker.Worker --webui-port 8081 spark://192.168.1.11:7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/04/28 21:48:36 INFO Worker: Registered signal handlers for [TERM, HUP, INT]
+17/04/28 21:48:36 WARN Utils: Your hostname, kraken resolves to a loopback address: 127.0.1.1; using 192.168.1.13 instead (on interface eth0)
+17/04/28 21:48:36 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/04/28 21:48:36 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/04/28 21:48:36 INFO SecurityManager: Changing view acls to: my
+17/04/28 21:48:36 INFO SecurityManager: Changing modify acls to: my
+17/04/28 21:48:36 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(my); users with modify permissions: Set(my)
+17/04/28 21:48:37 INFO Utils: Successfully started service 'sparkWorker' on port 35449.
+17/04/28 21:48:37 INFO Worker: Starting Spark worker 192.168.1.13:35449 with 4 cores, 2.8 GB RAM
+17/04/28 21:48:37 INFO Worker: Running Spark version 1.6.1
+17/04/28 21:48:37 INFO Worker: Spark home: /home/my/dev/spark/spark-1.6.1-bin-hadoop2.6
+17/04/28 21:48:37 INFO Utils: Successfully started service 'WorkerUI' on port 8081.
+17/04/28 21:48:37 INFO WorkerWebUI: Started WorkerWebUI at http://192.168.1.13:8081
+17/04/28 21:48:37 INFO Worker: Connecting to master 192.168.1.11:7077...
+17/04/28 21:48:37 INFO Worker: Successfully registered with master spark://192.168.1.11:7077
+17/04/28 21:49:52 INFO Worker: Asked to launch executor app-20170428214952-0000/1 for programme spark recherchant le Lapin crétin le plus crétin
+17/04/28 21:49:52 INFO SecurityManager: Changing view acls to: my
+17/04/28 21:49:52 INFO SecurityManager: Changing modify acls to: my
+17/04/28 21:49:52 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(my); users with modify permissions: Set(my)
+17/04/28 21:49:52 INFO ExecutorRunner: Launch command: "/usr/lib/jvm/java-8-oracle/bin/java" "-cp" "/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/conf/:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/spark-assembly-1.6.1-hadoop2.6.0.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-core-3.2.10.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-api-jdo-3.2.6.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-rdbms-3.2.9.jar" "-Xms1024M" "-Xmx1024M" "-Dspark.driver.port=40164" "org.apache.spark.executor.CoarseGrainedExecutorBackend" "--driver-url" "spark://CoarseGrainedScheduler@192.168.1.11:40164" "--executor-id" "1" "--hostname" "192.168.1.13" "--cores" "4" "--app-id" "app-20170428214952-0000" "--worker-url" "spark://Worker@192.168.1.13:35449"
+17/04/28 21:50:05 INFO Worker: Asked to kill executor app-20170428214952-0000/1
+17/04/28 21:50:05 INFO ExecutorRunner: Runner thread for executor app-20170428214952-0000/1 interrupted
+17/04/28 21:50:05 INFO ExecutorRunner: Killing process!
+17/04/28 21:50:05 INFO Worker: Executor app-20170428214952-0000/1 finished with state KILLED exitStatus 137
+17/04/28 21:50:05 INFO Worker: Cleaning up local directories for application app-20170428214952-0000
+17/04/28 21:50:05 INFO ExternalShuffleBlockResolver: Application app-20170428214952-0000 removed, cleanupLocalDirs = true

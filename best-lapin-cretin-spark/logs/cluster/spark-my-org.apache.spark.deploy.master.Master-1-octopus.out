@@ -1,0 +1,30 @@
+Spark Command: /home/my/dev/java/jdk1.8.0_51/bin/java -cp /home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/conf/:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/spark-assembly-1.6.1-hadoop2.6.0.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-api-jdo-3.2.6.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-rdbms-3.2.9.jar:/home/my/dev/spark/spark-1.6.1-bin-hadoop2.6/lib/datanucleus-core-3.2.10.jar -Xms1g -Xmx1g org.apache.spark.deploy.master.Master --ip octopus --port 7077 --webui-port 8080 --host 192.168.1.11 --port 7077
+========================================
+Using Spark's default log4j profile: org/apache/spark/log4j-defaults.properties
+17/04/28 21:47:14 INFO Master: Registered signal handlers for [TERM, HUP, INT]
+17/04/28 21:47:14 WARN Utils: Your hostname, octopus resolves to a loopback address: 127.0.1.1; using 192.168.1.11 instead (on interface enp7s0)
+17/04/28 21:47:14 WARN Utils: Set SPARK_LOCAL_IP if you need to bind to another address
+17/04/28 21:47:15 WARN NativeCodeLoader: Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+17/04/28 21:47:15 INFO SecurityManager: Changing view acls to: my
+17/04/28 21:47:15 INFO SecurityManager: Changing modify acls to: my
+17/04/28 21:47:15 INFO SecurityManager: SecurityManager: authentication disabled; ui acls disabled; users with view permissions: Set(my); users with modify permissions: Set(my)
+17/04/28 21:47:16 INFO Utils: Successfully started service 'sparkMaster' on port 7077.
+17/04/28 21:47:16 INFO Master: Starting Spark master at spark://192.168.1.11:7077
+17/04/28 21:47:16 INFO Master: Running Spark version 1.6.1
+17/04/28 21:47:16 INFO Utils: Successfully started service 'MasterUI' on port 8080.
+17/04/28 21:47:16 INFO MasterWebUI: Started MasterWebUI at http://192.168.1.11:8080
+17/04/28 21:47:16 INFO Utils: Successfully started service on port 6066.
+17/04/28 21:47:16 INFO StandaloneRestServer: Started REST server for submitting applications on port 6066
+17/04/28 21:47:16 INFO Master: I have been elected leader! New state: ALIVE
+17/04/28 21:47:52 INFO Master: Registering worker 192.168.1.11:44073 with 4 cores, 6.8 GB RAM
+17/04/28 21:48:37 INFO Master: Registering worker 192.168.1.13:35449 with 4 cores, 2.8 GB RAM
+17/04/28 21:49:52 INFO Master: Registering app programme spark recherchant le Lapin crétin le plus crétin
+17/04/28 21:49:52 INFO Master: Registered app programme spark recherchant le Lapin crétin le plus crétin with ID app-20170428214952-0000
+17/04/28 21:49:52 INFO Master: Launching executor app-20170428214952-0000/0 on worker worker-20170428214752-192.168.1.11-44073
+17/04/28 21:49:52 INFO Master: Launching executor app-20170428214952-0000/1 on worker worker-20170428214837-192.168.1.13-35449
+17/04/28 21:50:05 INFO Master: Received unregister request from application app-20170428214952-0000
+17/04/28 21:50:05 INFO Master: Removing app app-20170428214952-0000
+17/04/28 21:50:05 INFO Master: octopus.home:35158 got disassociated, removing it.
+17/04/28 21:50:05 INFO Master: 192.168.1.11:40164 got disassociated, removing it.
+17/04/28 21:50:05 WARN Master: Got status update for unknown executor app-20170428214952-0000/0
+17/04/28 21:50:05 WARN Master: Got status update for unknown executor app-20170428214952-0000/1
